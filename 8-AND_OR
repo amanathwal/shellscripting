@@ -1,0 +1,19 @@
+  #### && and || ###
+
+
+  1. && = AND 
+  
+  mkdir /tmp/abc && cp test.txt /tmp/bak/
+
+  command after AND will only execute if the previous command will succeed, means the status code is 0
+
+
+
+2. || = OR
+  
+cp test.txt /tmp/abc/ || cp test.txt /tmp
+
+only execute if the first command fails, means returns a non 0 status code
+
+
+# you can chain mutiple commands on a single line by sperating with a ;, it doesnot check status codes, its same as putting them on seperate line 

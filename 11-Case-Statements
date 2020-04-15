@@ -1,0 +1,21 @@
+#### Case Statements###
+case "$VAR" in 
+ pattern_1)
+   # Commands go here 
+    ;;
+
+    pattern_N)
+    # Commands go here 
+    ;;
+    
+    example
+    case "$1" in 
+     start)
+       /usr/sbin/sshd
+       ;;
+      *)
+        echo "case"
+        ;;
+    esac
+
+

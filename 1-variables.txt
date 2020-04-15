@@ -1,0 +1,13 @@
+##### Variables ###
+1. Syntax : 
+         VARIABLE_NAME="value"
+
+2. Variables are case sensitive
+3. By Convention they are uppercase 
+4 to use a variable 
+        $VARIABLE_NAME  or ${VARIABLE_NAME} 
+        curly braces if u wanna append some custom data like 
+         ${VARIABLE_NAME}ing
+
+5. you can assign the output of a command to a variable
+    like VARIABLE_NAME=$(hostname)

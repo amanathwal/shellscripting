@@ -1,0 +1,18 @@
+#### Exit status###
+
+1. Every time a command is executed it returns an exist status
+2. Range from 0 to 255
+3. 0 = success else error
+4. use man or info to find meaning of exit status 
+
+$? contains the return code of the previously executed command
+example: 
+   ls /not/there 
+   echo "$?"
+
+   output 2
+   
+   ### you sehll script also returns an exit command, you can control the status code by using the following statement 
+   exit 0 
+   by default it is the resuklt of last comand executed
+   exit status stops the excecution of the script

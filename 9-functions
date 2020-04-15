@@ -1,0 +1,55 @@
+### Creating a function 
+
+2 ways 
+
+1. function function-nam() {
+
+   }
+
+
+2. function-name() {
+
+
+}
+
+
+###executing 
+function-name    #no parathesis
+
+
+1. functions can accept params
+2. the first param is stored in $1
+3. $@ conatins all of the params
+4. Just like shell scripts 
+     $0=the script itself not the function name
+
+
+     Example: 
+      #!/bin/bash 
+      function hello() {
+          echo 'HELLO $1'
+      }
+
+      hello Aman 
+      #Output is:
+      # Hello Aman
+
+
+
+      ######
+  BY default, variables are global 
+  so calling function will change the value of global variable
+
+  creating local variables:
+  local LOCAL_VAR=1
+  only functions can have local variables, they can be only accessed within the function
+
+
+
+### Return code
+whatever code is returned using the return statement will be the exit status of the 
+function else if noting is specified the exit status of the last command executed in the function is the code.
+
+return statement only accepts an integer : 0-255
+0 specifies success 
+to access the exit status of a function use $?

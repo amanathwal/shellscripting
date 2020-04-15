@@ -1,0 +1,6 @@
+###SYSLOG###
+/var/log/syslog 
+
+##Logger## /var/log/syslog
+logger "Message"
+logger -p local0.info "Message"

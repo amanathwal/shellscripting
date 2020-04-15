@@ -1,0 +1,5 @@
+### Conditions ###
+1. Syntax 
+ [ Condition-to-test-for ]
+
+ 4. Type help test or man test to see different tests you can perform 

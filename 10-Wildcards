@@ -1,0 +1,29 @@
+### Wildcards ###
+
+1. * - matches zero or more characters 
+    a*.txt
+2. ? - matches exactly one character 
+     ?.txt    
+3. []- a charcter class 
+       matches any of the charcters in the branckets, matches exactly one character
+       example:  - ca[nt]*
+           matches are can, cat, candy, catch
+
+4. [!]- match anyof the characters NOT included between the brackets
+5. Ranges -
+   [a-g]* : matches all files that start with a,b,cd,e...g
+   there are predefined classes like:
+     [[:alpha:]], [[:digit:]] etc.
+6. \-escape character, use if you want to match a wild character 
+    example: match all files that end with a question mark 
+       *\? like done?
+
+
+###### Wildcards in Shell scripts #######
+example: 
+  cd /var/www/
+  for FILE in *.html 
+  do 
+    echo "Copying $FILE"
+    cp $FILE /var/www-test/
+ done

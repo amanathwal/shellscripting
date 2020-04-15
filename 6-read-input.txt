@@ -1,0 +1,8 @@
+ ### read ##
+
+ read -p "Statement that shows on screen"  variable where the evalue will stored
+
+ example:
+     read -p "Enter a user name:" USER 
+     echo "Username: $USER"
+

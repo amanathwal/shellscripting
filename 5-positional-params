@@ -1,0 +1,16 @@
+lets say the script is 
+ script.sh parameter1 parameter2 paramter3
+
+ these can be accessed like 
+ $0 : "script.sh"
+ $1 : "paramter1"
+
+ upto $9
+
+
+to access all the parameters starting from $1 till the end usingh 
+$@
+
+example:
+   for USER in $@
+   ....
